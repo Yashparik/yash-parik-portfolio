@@ -4,12 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yash Parik | Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(120deg, #f8fafc, #f1f5f9, #ffffff); /* Pearl White */
+      background: linear-gradient(120deg, #f8fafc, #f1f5f9, #ffffff);
       color: #020617;
       animation: fadeIn 1.2s ease-in;
     }
@@ -18,9 +20,20 @@
       padding: 60px 20px;
       text-align: center;
       background: linear-gradient(135deg, #e2e8f0, #f8fafc);
-      color: #020617;
-      animation: slideDown 1s ease;
       border-bottom: 1px solid #e5e7eb;
+      animation: slideDown 1s ease;
+    }
+
+    /* PROFILE IMAGE */
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #ffffff;
+      box-shadow: 0 12px 30px rgba(2, 6, 23, 0.15);
+      margin-bottom: 18px;
+      animation: popIn 0.8s ease;
     }
 
     header h1 {
@@ -61,7 +74,9 @@
       box-shadow: 0 18px 40px rgba(2, 6, 23, 0.12);
     }
 
-    ul { padding-left: 20px; }
+    ul {
+      padding-left: 20px;
+    }
 
     .skills span {
       display: inline-block;
@@ -70,9 +85,7 @@
       border-radius: 999px;
       margin: 6px;
       font-size: 0.95rem;
-      color: #020617;
       font-weight: 600;
-      animation: popIn 0.6s ease forwards;
     }
 
     footer {
@@ -80,7 +93,6 @@
       padding: 25px;
       background: #f1f5f9;
       color: #334155;
-      font-weight: 500;
       border-top: 1px solid #e5e7eb;
     }
 
@@ -118,27 +130,39 @@
     }
 
     @media (max-width: 768px) {
-      section { padding: 40px 6%; }
-      header h1 { font-size: 2.2rem; }
+      section {
+        padding: 40px 6%;
+      }
+      header h1 {
+        font-size: 2.2rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
 <header>
+  <img src="IMG_Yash.PNG" alt="Yash Parik" class="profile-pic" />
   <h1>Yash Sachin Parik</h1>
   <p>Aspiring Software Developer | Computer Engineering Student</p>
   <p>
     <a href="mailto:yashparik04@gmail.com"><i class="fas fa-envelope"></i></a>
     <a href="tel:9518342146"><i class="fas fa-phone"></i></a>
-    <a href="https://linkedin.com/in/yash-parik-8a5995245" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://linkedin.com/in/yash-parik-8a5995245" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
   </p>
 </header>
 
 <section>
   <h2>About Me</h2>
   <div class="card">
-    <p>I am a Computer Engineering student pursuing B.E. with a strong foundation in programming, embedded systems, and web technologies. I enjoy building practical projects and continuously enhancing my technical skills.</p>
+    <p>
+      I am a Computer Engineering student pursuing B.E. with a strong foundation
+      in programming, embedded systems, and web technologies. I enjoy building
+      practical projects and continuously enhancing my technical skills.
+    </p>
   </div>
 </section>
 
@@ -146,12 +170,13 @@
   <h2>Education</h2>
   <div class="card">
     <h3>B.E. Computer Engineering</h3>
-    <p>Brahma Valley College of Engineering, Nashik (2024–Present)</p>
+    <p>Brahma Valley College of Engineering & Research Institute , Nashik (2024–Present)</p>
     <p>CGPA: 6.32</p>
   </div>
+
   <div class="card">
     <h3>Diploma in Computer Science</h3>
-    <p>DKTE Polytechnic, Ichalkaranji (2020–2023)</p>
+    <p>DKTE'S Yashwantrao Chavan Polytechnic, Ichalkaranji (2020–2023)</p>
     <p>Percentage: 66.11%</p>
   </div>
 </section>
@@ -160,12 +185,14 @@
   <h2>Projects</h2>
   <div class="card">
     <h3>Voice-Controlled Robot Car</h3>
-    <p>Arduino-based robotic car controlled via Android voice commands using Bluetooth communication.</p>
+    <p>Arduino-based robotic car controlled via Android voice commands using Bluetooth.</p>
   </div>
+
   <div class="card">
     <h3>Library Management System</h3>
-    <p>C++ command-line application to manage books and student records using file handling.</p>
+    <p>C++ application to manage books and student records using file handling.</p>
   </div>
+
   <div class="card">
     <h3>ParkPrime – Online Parking System</h3>
     <p>Worked on documentation, use-case diagrams, and system workflow.</p>
